@@ -1,10 +1,10 @@
 ---
 repository:
   name: terraform-root-module
-  description: Terraform module to manage the FIXME resources
-  homepage: https://github.com/dhoppeIT/terraform-FIXME-config
-  topics: terraform, FIXME
-  private: true
+  description: Terraform module to manage the Terraform Cloud/Enterprise resources
+  homepage: https://github.com/dhoppeIT/terraform-tfe-config
+  topics: terraform, tfe
+  private: false
   has_issues: true
   has_projects: false
   has_wiki: false
