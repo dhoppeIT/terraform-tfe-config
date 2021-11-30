@@ -70,6 +70,43 @@ module "tfe-registry" {
 ```
 
 <!--- BEGIN_TF_DOCS --->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | >= 0.26.1, < 1.0.0 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_tfe-notification"></a> [tfe-notification](#module\_tfe-notification) | dhoppeIT/notification/tfe | n/a |
+| <a name="module_tfe-oauth_client"></a> [tfe-oauth\_client](#module\_tfe-oauth\_client) | dhoppeIT/oauth_client/tfe | n/a |
+| <a name="module_tfe-organization"></a> [tfe-organization](#module\_tfe-organization) | dhoppeIT/organization/tfe | n/a |
+| <a name="module_tfe-registry"></a> [tfe-registry](#module\_tfe-registry) | dhoppeIT/registry/tfe | n/a |
+| <a name="module_tfe-variable"></a> [tfe-variable](#module\_tfe-variable) | dhoppeIT/variable/tfe | n/a |
+| <a name="module_tfe-workspace"></a> [tfe-workspace](#module\_tfe-workspace) | dhoppeIT/workspace/tfe | n/a |
+
+## Resources
+
+No resources.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_github_token"></a> [github\_token](#input\_github\_token) | The token used to authenticate with GitHub | `string` | `null` | no |
+| <a name="input_slack_webhook_url"></a> [slack\_webhook\_url](#input\_slack\_webhook\_url) | The destination URL used to send Slack notifications | `string` | `null` | no |
+
+## Outputs
+
+No outputs.
+
 <!--- END_TF_DOCS --->
 
 ## Authors
