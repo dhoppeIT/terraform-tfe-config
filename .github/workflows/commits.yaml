@@ -1,0 +1,17 @@
+---
+name: Commits
+
+on:
+  pull_request:
+
+jobs:
+  commits:
+    name: Validate Commits
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Validate Commits
+        uses: docker://aevea/commitsar

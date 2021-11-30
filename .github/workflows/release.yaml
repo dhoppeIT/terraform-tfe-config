@@ -1,0 +1,19 @@
+---
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        uses: GoogleCloudPlatform/release-please-action@v2
+        with:
+          release-type: terraform-module
+          bump-minor-pre-major: true
+          pull-request-title-pattern: "chore${scope}: Release${component} ${version}"
