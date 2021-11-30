@@ -3,7 +3,7 @@ terraform {
     organization = "dhoppeIT"
 
     workspaces {
-      name = "FIXME"
+      name = "terraform"
     }
   }
 }
