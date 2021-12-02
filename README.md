@@ -85,12 +85,15 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_tfe-notification"></a> [tfe-notification](#module\_tfe-notification) | dhoppeIT/notification/tfe | n/a |
+| <a name="module_tfe-notification_aws"></a> [tfe-notification\_aws](#module\_tfe-notification\_aws) | dhoppeIT/notification/tfe | n/a |
+| <a name="module_tfe-notification_terraform"></a> [tfe-notification\_terraform](#module\_tfe-notification\_terraform) | dhoppeIT/notification/tfe | n/a |
 | <a name="module_tfe-oauth_client"></a> [tfe-oauth\_client](#module\_tfe-oauth\_client) | dhoppeIT/oauth_client/tfe | n/a |
 | <a name="module_tfe-organization"></a> [tfe-organization](#module\_tfe-organization) | dhoppeIT/organization/tfe | n/a |
 | <a name="module_tfe-registry"></a> [tfe-registry](#module\_tfe-registry) | dhoppeIT/registry/tfe | n/a |
-| <a name="module_tfe-variable"></a> [tfe-variable](#module\_tfe-variable) | dhoppeIT/variable/tfe | n/a |
-| <a name="module_tfe-workspace"></a> [tfe-workspace](#module\_tfe-workspace) | dhoppeIT/workspace/tfe | n/a |
+| <a name="module_tfe-variable_aws"></a> [tfe-variable\_aws](#module\_tfe-variable\_aws) | dhoppeIT/variable/tfe | n/a |
+| <a name="module_tfe-variable_terraform"></a> [tfe-variable\_terraform](#module\_tfe-variable\_terraform) | dhoppeIT/variable/tfe | n/a |
+| <a name="module_tfe-workspace_aws"></a> [tfe-workspace\_aws](#module\_tfe-workspace\_aws) | dhoppeIT/workspace/tfe | n/a |
+| <a name="module_tfe-workspace_terraform"></a> [tfe-workspace\_terraform](#module\_tfe-workspace\_terraform) | dhoppeIT/workspace/tfe | n/a |
 
 ## Resources
 
