@@ -1,3 +1,22 @@
+locals {
+  variables_terraform = {
+    "github_token" = {
+      key         = "github_token"
+      value       = var.github_token
+      category    = "terraform"
+      description = "The token used to authenticate with GitHub"
+      sensitive   = true
+    },
+    "slack_webhook_url" = {
+      key         = "slack_webhook_url"
+      value       = var.slack_webhook_url
+      category    = "terraform"
+      description = "The destination URL used to send Slack notifications"
+      sensitive   = true
+    }
+  }
+}
+
 module "tfe-workspace_terraform" {
   source = "dhoppeIT/workspace/tfe"
 
@@ -15,7 +34,7 @@ module "tfe-workspace_terraform" {
 module "tfe-variable_terraform" {
   source = "dhoppeIT/variable/tfe"
 
-  for_each = local.variables
+  for_each = local.variables_terraform
 
   key          = each.value["key"]
   value        = each.value["value"]
