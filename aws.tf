@@ -1,3 +1,15 @@
+locals {
+  variables_aws = {
+    "slack_webhook_url" = {
+      key         = "slack_webhook_url"
+      value       = var.slack_webhook_url
+      category    = "terraform"
+      description = "The destination URL used to send Slack notifications"
+      sensitive   = true
+    }
+  }
+}
+
 module "tfe-workspace_aws" {
   source = "dhoppeIT/workspace/tfe"
 
@@ -15,7 +27,7 @@ module "tfe-workspace_aws" {
 module "tfe-variable_aws" {
   source = "dhoppeIT/variable/tfe"
 
-  for_each = local.variables
+  for_each = local.variables_aws
 
   key          = each.value["key"]
   value        = each.value["value"]
