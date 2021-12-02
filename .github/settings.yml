@@ -1,6 +1,6 @@
 ---
 repository:
-  name: terraform-root-module
+  name: terraform-tfe-config
   description: Terraform module to manage the Terraform Cloud/Enterprise resources
   homepage: https://github.com/dhoppeIT/terraform-tfe-config
   topics: terraform, tfe
