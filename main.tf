@@ -35,6 +35,14 @@ module "tfe-organization" {
   collaborator_auth_policy = "two_factor_mandatory"
 }
 
+module "tfe-team" {
+  source = "dhoppeIT/team/tfe"
+
+  name                       = "owners"
+  organization               = module.tfe-organization.name
+  organization_membership_id = module.tfe-organization.id
+}
+
 module "tfe-oauth_client" {
   source = "dhoppeIT/oauth_client/tfe"
 
