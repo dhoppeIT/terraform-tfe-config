@@ -24,7 +24,7 @@ module "tfe-workspace_terraform" {
   organization      = module.tfe-organization.name
   description       = "Provision of Terraform Cloud/Enterprise resources"
   queue_all_runs    = false
-  terraform_version = "1.0.11"
+  terraform_version = "1.1.0"
   tag_names         = ["terraform"]
   identifier        = "dhoppeIT/terraform-tfe-config"
   branch            = "main"
