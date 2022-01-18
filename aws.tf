@@ -17,7 +17,7 @@ module "tfe-workspace_aws" {
   organization      = module.tfe-organization.name
   description       = "Provision of Amazon Web Services resources"
   queue_all_runs    = true
-  terraform_version = "1.1.0"
+  terraform_version = "1.1.3"
   tag_names         = ["aws"]
   identifier        = "dhoppeIT/terraform-aws-config"
   branch            = "main"
