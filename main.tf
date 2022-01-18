@@ -30,9 +30,10 @@ locals {
 module "tfe-organization" {
   source = "dhoppeIT/organization/tfe"
 
-  name                     = "dhoppeIT"
-  email                    = "terraform@dhoppe.it"
-  collaborator_auth_policy = "two_factor_mandatory"
+  name                                                    = "dhoppeIT"
+  email                                                   = "terraform@dhoppe.it"
+  collaborator_auth_policy                                = "two_factor_mandatory"
+  send_passing_statuses_for_untriggered_speculative_plans = true
 }
 
 module "tfe-team" {
