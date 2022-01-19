@@ -11,6 +11,12 @@ locals {
       category    = "terraform"
       description = "The destination URL used to send Slack notifications"
       sensitive   = true
+    },
+    "TFE_TOKEN" = {
+      value       = module.tfe-team.token
+      category    = "env"
+      description = "The token used to authenticate with Terraform Cloud/Enterprise"
+      sensitive   = true
     }
   }
 }
