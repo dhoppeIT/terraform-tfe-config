@@ -1,7 +1,6 @@
 locals {
   variables_aws = {
     "slack_webhook_url" = {
-      key         = "slack_webhook_url"
       value       = var.slack_webhook_url
       category    = "terraform"
       description = "The destination URL used to send Slack notifications"
@@ -29,7 +28,7 @@ module "tfe-variable_aws" {
 
   for_each = local.variables_aws
 
-  key          = each.value["key"]
+  key          = each.key
   value        = each.value["value"]
   category     = each.value["category"]
   description  = each.value["description"]
