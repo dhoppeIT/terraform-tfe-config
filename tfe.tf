@@ -34,12 +34,13 @@ module "tfe-variable_terraform" {
 
   for_each = local.variables_terraform
 
-  key          = each.key
-  value        = each.value["value"]
-  category     = each.value["category"]
-  description  = each.value["description"]
-  sensitive    = each.value["sensitive"]
-  workspace_id = module.tfe-workspace_terraform.id
+  key                = each.key
+  value              = each.value["value"]
+  category           = each.value["category"]
+  description        = each.value["description"]
+  description_suffix = "(managed by Terraform)"
+  sensitive          = each.value["sensitive"]
+  workspace_id       = module.tfe-workspace_terraform.id
 }
 
 module "tfe-notification_terraform" {

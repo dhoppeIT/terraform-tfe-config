@@ -28,12 +28,13 @@ module "tfe-variable_aws" {
 
   for_each = local.variables_aws
 
-  key          = each.key
-  value        = each.value["value"]
-  category     = each.value["category"]
-  description  = each.value["description"]
-  sensitive    = each.value["sensitive"]
-  workspace_id = module.tfe-workspace_aws.id
+  key                = each.key
+  value              = each.value["value"]
+  category           = each.value["category"]
+  description        = each.value["description"]
+  description_suffix = "(managed by Terraform)"
+  sensitive          = each.value["sensitive"]
+  workspace_id       = module.tfe-workspace_aws.id
 }
 
 module "tfe-notification_aws" {
