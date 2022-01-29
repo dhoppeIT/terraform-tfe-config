@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.3](https://github.com/dhoppeIT/terraform-tfe-config/compare/v0.1.2...v0.1.3) (2022-01-29)
+
+
+### Bug Fixes
+
+* Use snake case for Terraform resources ([#25](https://github.com/dhoppeIT/terraform-tfe-config/issues/25)) ([31ed032](https://github.com/dhoppeIT/terraform-tfe-config/commit/31ed03222914bf6b82663e6f9837f5591f670630))
+
 ### [0.1.2](https://github.com/dhoppeIT/terraform-tfe-config/compare/v0.1.1...v0.1.2) (2022-01-29)
 
 
