@@ -9,22 +9,22 @@ locals {
   }
 }
 
-module "tfe-workspace_aws" {
+module "tfe_workspace_aws" {
   source  = "dhoppeIT/workspace/tfe"
   version = "~> 0.2.0"
 
   name              = "aws"
-  organization      = module.tfe-organization.name
+  organization      = module.tfe_organization.name
   description       = "Provision of Amazon Web Services resources"
   queue_all_runs    = true
   terraform_version = "1.1.3"
   tag_names         = ["aws"]
   identifier        = "dhoppeIT/terraform-aws-config"
   branch            = "main"
-  oauth_token_id    = module.tfe-oauth_client.oauth_token_id
+  oauth_token_id    = module.tfe_oauth_client.oauth_token_id
 }
 
-module "tfe-variable_aws" {
+module "tfe_variable_aws" {
   source  = "dhoppeIT/variable/tfe"
   version = "~> 0.2.0"
 
@@ -36,10 +36,10 @@ module "tfe-variable_aws" {
   description        = each.value["description"]
   description_suffix = "(managed by Terraform)"
   sensitive          = each.value["sensitive"]
-  workspace_id       = module.tfe-workspace_aws.id
+  workspace_id       = module.tfe_workspace_aws.id
 }
 
-module "tfe-notification_aws" {
+module "tfe_notification_aws" {
   source  = "dhoppeIT/notification/tfe"
   version = "~> 0.1.0"
 
@@ -51,5 +51,5 @@ module "tfe-notification_aws" {
     "run:errored"
   ]
   url          = var.slack_webhook_url
-  workspace_id = module.tfe-workspace_aws.id
+  workspace_id = module.tfe_workspace_aws.id
 }

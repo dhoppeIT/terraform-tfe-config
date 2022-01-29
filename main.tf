@@ -27,7 +27,7 @@ locals {
   }
 }
 
-module "tfe-organization" {
+module "tfe_organization" {
   source  = "dhoppeIT/organization/tfe"
   version = "~> 0.3.0"
 
@@ -37,27 +37,27 @@ module "tfe-organization" {
   send_passing_statuses_for_untriggered_speculative_plans = true
 }
 
-module "tfe-team" {
+module "tfe_team" {
   source  = "dhoppeIT/team/tfe"
   version = "~> 0.1.1"
 
   name                       = "owners"
-  organization               = module.tfe-organization.name
-  organization_membership_id = module.tfe-organization.id
+  organization               = module.tfe_organization.name
+  organization_membership_id = module.tfe_organization.id
 }
 
-module "tfe-oauth_client" {
+module "tfe_oauth_client" {
   source  = "dhoppeIT/oauth_client/tfe"
   version = "~> 0.2.0"
 
-  organization     = module.tfe-organization.name
+  organization     = module.tfe_organization.name
   api_url          = "https://api.github.com"
   http_url         = "https://github.com"
   oauth_token      = var.github_token
   service_provider = "github"
 }
 
-module "tfe-registry" {
+module "tfe_registry" {
   source  = "dhoppeIT/registry/tfe"
   version = "~> 0.1.0"
 
@@ -65,5 +65,5 @@ module "tfe-registry" {
 
   display_identifier = each.value["display_identifier"]
   identifier         = each.value["identifier"]
-  oauth_token_id     = module.tfe-oauth_client.oauth_token_id
+  oauth_token_id     = module.tfe_oauth_client.oauth_token_id
 }
