@@ -85,16 +85,16 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_tfe-notification_aws"></a> [tfe-notification\_aws](#module\_tfe-notification\_aws) | dhoppeIT/notification/tfe | ~> 0.1.0 |
-| <a name="module_tfe-notification_terraform"></a> [tfe-notification\_terraform](#module\_tfe-notification\_terraform) | dhoppeIT/notification/tfe | ~> 0.1.0 |
-| <a name="module_tfe-oauth_client"></a> [tfe-oauth\_client](#module\_tfe-oauth\_client) | dhoppeIT/oauth_client/tfe | ~> 0.2.0 |
-| <a name="module_tfe-organization"></a> [tfe-organization](#module\_tfe-organization) | dhoppeIT/organization/tfe | ~> 0.3.0 |
-| <a name="module_tfe-registry"></a> [tfe-registry](#module\_tfe-registry) | dhoppeIT/registry/tfe | ~> 0.1.0 |
-| <a name="module_tfe-team"></a> [tfe-team](#module\_tfe-team) | dhoppeIT/team/tfe | ~> 0.1.1 |
-| <a name="module_tfe-variable_aws"></a> [tfe-variable\_aws](#module\_tfe-variable\_aws) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe-variable_terraform"></a> [tfe-variable\_terraform](#module\_tfe-variable\_terraform) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe-workspace_aws"></a> [tfe-workspace\_aws](#module\_tfe-workspace\_aws) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
-| <a name="module_tfe-workspace_terraform"></a> [tfe-workspace\_terraform](#module\_tfe-workspace\_terraform) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
+| <a name="module_tfe_notification_aws"></a> [tfe\_notification\_aws](#module\_tfe\_notification\_aws) | dhoppeIT/notification/tfe | ~> 0.1.0 |
+| <a name="module_tfe_notification_terraform"></a> [tfe\_notification\_terraform](#module\_tfe\_notification\_terraform) | dhoppeIT/notification/tfe | ~> 0.1.0 |
+| <a name="module_tfe_oauth_client"></a> [tfe\_oauth\_client](#module\_tfe\_oauth\_client) | dhoppeIT/oauth_client/tfe | ~> 0.2.0 |
+| <a name="module_tfe_organization"></a> [tfe\_organization](#module\_tfe\_organization) | dhoppeIT/organization/tfe | ~> 0.3.0 |
+| <a name="module_tfe_registry"></a> [tfe\_registry](#module\_tfe\_registry) | dhoppeIT/registry/tfe | ~> 0.1.0 |
+| <a name="module_tfe_team"></a> [tfe\_team](#module\_tfe\_team) | dhoppeIT/team/tfe | ~> 0.1.1 |
+| <a name="module_tfe_variable_aws"></a> [tfe\_variable\_aws](#module\_tfe\_variable\_aws) | dhoppeIT/variable/tfe | ~> 0.2.0 |
+| <a name="module_tfe_variable_terraform"></a> [tfe\_variable\_terraform](#module\_tfe\_variable\_terraform) | dhoppeIT/variable/tfe | ~> 0.2.0 |
+| <a name="module_tfe_workspace_aws"></a> [tfe\_workspace\_aws](#module\_tfe\_workspace\_aws) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
+| <a name="module_tfe_workspace_terraform"></a> [tfe\_workspace\_terraform](#module\_tfe\_workspace\_terraform) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
 
 ## Resources
 
