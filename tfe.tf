@@ -13,7 +13,7 @@ locals {
       sensitive   = true
     },
     "TFE_TOKEN" = {
-      value       = module.tfe-team.token
+      value       = module.tfe_team.token
       category    = "env"
       description = "The token used to authenticate with Terraform Cloud/Enterprise"
       sensitive   = true
@@ -21,22 +21,22 @@ locals {
   }
 }
 
-module "tfe-workspace_terraform" {
+module "tfe_workspace_terraform" {
   source  = "dhoppeIT/workspace/tfe"
   version = "~> 0.2.0"
 
   name              = "terraform"
-  organization      = module.tfe-organization.name
+  organization      = module.tfe_organization.name
   description       = "Provision of Terraform Cloud/Enterprise resources"
   queue_all_runs    = false
   terraform_version = "1.1.3"
   tag_names         = ["terraform"]
   identifier        = "dhoppeIT/terraform-tfe-config"
   branch            = "main"
-  oauth_token_id    = module.tfe-oauth_client.oauth_token_id
+  oauth_token_id    = module.tfe_oauth_client.oauth_token_id
 }
 
-module "tfe-variable_terraform" {
+module "tfe_variable_terraform" {
   source  = "dhoppeIT/variable/tfe"
   version = "~> 0.2.0"
 
@@ -48,10 +48,10 @@ module "tfe-variable_terraform" {
   description        = each.value["description"]
   description_suffix = "(managed by Terraform)"
   sensitive          = each.value["sensitive"]
-  workspace_id       = module.tfe-workspace_terraform.id
+  workspace_id       = module.tfe_workspace_terraform.id
 }
 
-module "tfe-notification_terraform" {
+module "tfe_notification_terraform" {
   source  = "dhoppeIT/notification/tfe"
   version = "~> 0.1.0"
 
@@ -63,5 +63,5 @@ module "tfe-notification_terraform" {
     "run:errored"
   ]
   url          = var.slack_webhook_url
-  workspace_id = module.tfe-workspace_terraform.id
+  workspace_id = module.tfe_workspace_terraform.id
 }
