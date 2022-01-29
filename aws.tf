@@ -10,7 +10,8 @@ locals {
 }
 
 module "tfe-workspace_aws" {
-  source = "dhoppeIT/workspace/tfe"
+  source  = "dhoppeIT/workspace/tfe"
+  version = "~> 0.2.0"
 
   name              = "aws"
   organization      = module.tfe-organization.name
@@ -24,7 +25,8 @@ module "tfe-workspace_aws" {
 }
 
 module "tfe-variable_aws" {
-  source = "dhoppeIT/variable/tfe"
+  source  = "dhoppeIT/variable/tfe"
+  version = "~> 0.2.0"
 
   for_each = local.variables_aws
 
@@ -38,7 +40,8 @@ module "tfe-variable_aws" {
 }
 
 module "tfe-notification_aws" {
-  source = "dhoppeIT/notification/tfe"
+  source  = "dhoppeIT/notification/tfe"
+  version = "~> 0.1.0"
 
   name             = "slack"
   enabled          = true

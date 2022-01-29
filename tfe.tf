@@ -22,7 +22,8 @@ locals {
 }
 
 module "tfe-workspace_terraform" {
-  source = "dhoppeIT/workspace/tfe"
+  source  = "dhoppeIT/workspace/tfe"
+  version = "~> 0.2.0"
 
   name              = "terraform"
   organization      = module.tfe-organization.name
@@ -36,7 +37,8 @@ module "tfe-workspace_terraform" {
 }
 
 module "tfe-variable_terraform" {
-  source = "dhoppeIT/variable/tfe"
+  source  = "dhoppeIT/variable/tfe"
+  version = "~> 0.2.0"
 
   for_each = local.variables_terraform
 
@@ -50,7 +52,8 @@ module "tfe-variable_terraform" {
 }
 
 module "tfe-notification_terraform" {
-  source = "dhoppeIT/notification/tfe"
+  source  = "dhoppeIT/notification/tfe"
+  version = "~> 0.1.0"
 
   name             = "slack"
   enabled          = true
