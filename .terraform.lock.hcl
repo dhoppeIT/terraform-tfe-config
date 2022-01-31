@@ -22,7 +22,7 @@ provider "registry.terraform.io/hashicorp/aws" {
 
 provider "registry.terraform.io/hashicorp/tfe" {
   version     = "0.27.1"
-  constraints = ">= 0.26.1, >= 0.27.0, < 1.0.0"
+  constraints = "~> 0.26, >= 0.26.1, >= 0.27.0, < 1.0.0"
   hashes = [
     "h1:8W9z9RSe3kPIFBZQ46+1e1A9jmc8cQhpPraxaIdb/o4=",
     "zh:2ba6d0f935444c4799e1596210dc023986181f5a3ef61adcd785f4feb25056f2",
