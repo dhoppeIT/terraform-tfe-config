@@ -74,7 +74,7 @@ locals {
 
 module "tfe_workspace_aws" {
   source  = "dhoppeIT/workspace/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.workspaces_aws
 
@@ -91,7 +91,7 @@ module "tfe_workspace_aws" {
 
 module "tfe_variable_aws_dev" {
   source  = "dhoppeIT/variable/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.variables_aws_dev
 
@@ -106,7 +106,7 @@ module "tfe_variable_aws_dev" {
 
 module "tfe_variable_aws_stage" {
   source  = "dhoppeIT/variable/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.variables_aws_stage
 
@@ -121,7 +121,7 @@ module "tfe_variable_aws_stage" {
 
 module "tfe_variable_aws_prod" {
   source  = "dhoppeIT/variable/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.variables_aws_prod
 
@@ -136,7 +136,7 @@ module "tfe_variable_aws_prod" {
 
 module "tfe_notification_aws" {
   source  = "dhoppeIT/notification/tfe"
-  version = "~> 0.1.0"
+  version = "~> 0.1"
 
   for_each = local.workspaces_aws
 
