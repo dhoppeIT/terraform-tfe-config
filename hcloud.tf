@@ -53,7 +53,7 @@ locals {
 
 module "tfe_workspace_hcloud" {
   source  = "dhoppeIT/workspace/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.workspaces_hcloud
 
@@ -70,7 +70,7 @@ module "tfe_workspace_hcloud" {
 
 module "tfe_variable_hcloud_dev" {
   source  = "dhoppeIT/variable/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.variables_hcloud_dev
 
@@ -85,7 +85,7 @@ module "tfe_variable_hcloud_dev" {
 
 module "tfe_variable_hcloud_stage" {
   source  = "dhoppeIT/variable/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.variables_hcloud_stage
 
@@ -100,7 +100,7 @@ module "tfe_variable_hcloud_stage" {
 
 module "tfe_variable_hcloud_prod" {
   source  = "dhoppeIT/variable/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   for_each = local.variables_hcloud_prod
 
@@ -115,7 +115,7 @@ module "tfe_variable_hcloud_prod" {
 
 module "tfe_notification_hcloud" {
   source  = "dhoppeIT/notification/tfe"
-  version = "~> 0.1.0"
+  version = "~> 0.1"
 
   for_each = local.workspaces_hcloud
 

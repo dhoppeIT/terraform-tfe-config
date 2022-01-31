@@ -75,7 +75,7 @@ module "tfe-registry" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | >= 0.26.1, < 1.0.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.26 |
 
 ## Providers
 
@@ -85,23 +85,23 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_tfe_notification_aws"></a> [tfe\_notification\_aws](#module\_tfe\_notification\_aws) | dhoppeIT/notification/tfe | ~> 0.1.0 |
-| <a name="module_tfe_notification_hcloud"></a> [tfe\_notification\_hcloud](#module\_tfe\_notification\_hcloud) | dhoppeIT/notification/tfe | ~> 0.1.0 |
-| <a name="module_tfe_notification_terraform"></a> [tfe\_notification\_terraform](#module\_tfe\_notification\_terraform) | dhoppeIT/notification/tfe | ~> 0.1.0 |
-| <a name="module_tfe_oauth_client"></a> [tfe\_oauth\_client](#module\_tfe\_oauth\_client) | dhoppeIT/oauth_client/tfe | ~> 0.2.0 |
-| <a name="module_tfe_organization"></a> [tfe\_organization](#module\_tfe\_organization) | dhoppeIT/organization/tfe | ~> 0.3.0 |
-| <a name="module_tfe_registry"></a> [tfe\_registry](#module\_tfe\_registry) | dhoppeIT/registry/tfe | ~> 0.1.0 |
-| <a name="module_tfe_team"></a> [tfe\_team](#module\_tfe\_team) | dhoppeIT/team/tfe | ~> 0.1.1 |
-| <a name="module_tfe_variable_aws_dev"></a> [tfe\_variable\_aws\_dev](#module\_tfe\_variable\_aws\_dev) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_variable_aws_prod"></a> [tfe\_variable\_aws\_prod](#module\_tfe\_variable\_aws\_prod) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_variable_aws_stage"></a> [tfe\_variable\_aws\_stage](#module\_tfe\_variable\_aws\_stage) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_variable_hcloud_dev"></a> [tfe\_variable\_hcloud\_dev](#module\_tfe\_variable\_hcloud\_dev) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_variable_hcloud_prod"></a> [tfe\_variable\_hcloud\_prod](#module\_tfe\_variable\_hcloud\_prod) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_variable_hcloud_stage"></a> [tfe\_variable\_hcloud\_stage](#module\_tfe\_variable\_hcloud\_stage) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_variable_terraform"></a> [tfe\_variable\_terraform](#module\_tfe\_variable\_terraform) | dhoppeIT/variable/tfe | ~> 0.2.0 |
-| <a name="module_tfe_workspace_aws"></a> [tfe\_workspace\_aws](#module\_tfe\_workspace\_aws) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
-| <a name="module_tfe_workspace_hcloud"></a> [tfe\_workspace\_hcloud](#module\_tfe\_workspace\_hcloud) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
-| <a name="module_tfe_workspace_terraform"></a> [tfe\_workspace\_terraform](#module\_tfe\_workspace\_terraform) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
+| <a name="module_tfe_notification_aws"></a> [tfe\_notification\_aws](#module\_tfe\_notification\_aws) | dhoppeIT/notification/tfe | ~> 0.1 |
+| <a name="module_tfe_notification_hcloud"></a> [tfe\_notification\_hcloud](#module\_tfe\_notification\_hcloud) | dhoppeIT/notification/tfe | ~> 0.1 |
+| <a name="module_tfe_notification_terraform"></a> [tfe\_notification\_terraform](#module\_tfe\_notification\_terraform) | dhoppeIT/notification/tfe | ~> 0.1 |
+| <a name="module_tfe_oauth_client"></a> [tfe\_oauth\_client](#module\_tfe\_oauth\_client) | dhoppeIT/oauth_client/tfe | ~> 0.2 |
+| <a name="module_tfe_organization"></a> [tfe\_organization](#module\_tfe\_organization) | dhoppeIT/organization/tfe | ~> 0.3 |
+| <a name="module_tfe_registry"></a> [tfe\_registry](#module\_tfe\_registry) | dhoppeIT/registry/tfe | ~> 0.1 |
+| <a name="module_tfe_team"></a> [tfe\_team](#module\_tfe\_team) | dhoppeIT/team/tfe | ~> 0.1 |
+| <a name="module_tfe_variable_aws_dev"></a> [tfe\_variable\_aws\_dev](#module\_tfe\_variable\_aws\_dev) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_variable_aws_prod"></a> [tfe\_variable\_aws\_prod](#module\_tfe\_variable\_aws\_prod) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_variable_aws_stage"></a> [tfe\_variable\_aws\_stage](#module\_tfe\_variable\_aws\_stage) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_variable_hcloud_dev"></a> [tfe\_variable\_hcloud\_dev](#module\_tfe\_variable\_hcloud\_dev) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_variable_hcloud_prod"></a> [tfe\_variable\_hcloud\_prod](#module\_tfe\_variable\_hcloud\_prod) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_variable_hcloud_stage"></a> [tfe\_variable\_hcloud\_stage](#module\_tfe\_variable\_hcloud\_stage) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_variable_terraform"></a> [tfe\_variable\_terraform](#module\_tfe\_variable\_terraform) | dhoppeIT/variable/tfe | ~> 0.2 |
+| <a name="module_tfe_workspace_aws"></a> [tfe\_workspace\_aws](#module\_tfe\_workspace\_aws) | dhoppeIT/workspace/tfe | ~> 0.2 |
+| <a name="module_tfe_workspace_hcloud"></a> [tfe\_workspace\_hcloud](#module\_tfe\_workspace\_hcloud) | dhoppeIT/workspace/tfe | ~> 0.2 |
+| <a name="module_tfe_workspace_terraform"></a> [tfe\_workspace\_terraform](#module\_tfe\_workspace\_terraform) | dhoppeIT/workspace/tfe | ~> 0.2 |
 
 ## Resources
 

@@ -29,7 +29,7 @@ locals {
 
 module "tfe_organization" {
   source  = "dhoppeIT/organization/tfe"
-  version = "~> 0.3.0"
+  version = "~> 0.3"
 
   name                                                    = "dhoppeIT"
   email                                                   = "terraform@dhoppe.it"
@@ -39,7 +39,7 @@ module "tfe_organization" {
 
 module "tfe_team" {
   source  = "dhoppeIT/team/tfe"
-  version = "~> 0.1.1"
+  version = "~> 0.1"
 
   name                       = "owners"
   organization               = module.tfe_organization.name
@@ -48,7 +48,7 @@ module "tfe_team" {
 
 module "tfe_oauth_client" {
   source  = "dhoppeIT/oauth_client/tfe"
-  version = "~> 0.2.0"
+  version = "~> 0.2"
 
   organization     = module.tfe_organization.name
   api_url          = "https://api.github.com"
@@ -59,7 +59,7 @@ module "tfe_oauth_client" {
 
 module "tfe_registry" {
   source  = "dhoppeIT/registry/tfe"
-  version = "~> 0.1.0"
+  version = "~> 0.1"
 
   for_each = local.modules
 
