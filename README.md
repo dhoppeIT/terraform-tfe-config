@@ -86,14 +86,19 @@ No providers.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_tfe_notification_aws"></a> [tfe\_notification\_aws](#module\_tfe\_notification\_aws) | dhoppeIT/notification/tfe | ~> 0.1.0 |
+| <a name="module_tfe_notification_hcloud"></a> [tfe\_notification\_hcloud](#module\_tfe\_notification\_hcloud) | dhoppeIT/notification/tfe | ~> 0.1.0 |
 | <a name="module_tfe_notification_terraform"></a> [tfe\_notification\_terraform](#module\_tfe\_notification\_terraform) | dhoppeIT/notification/tfe | ~> 0.1.0 |
 | <a name="module_tfe_oauth_client"></a> [tfe\_oauth\_client](#module\_tfe\_oauth\_client) | dhoppeIT/oauth_client/tfe | ~> 0.2.0 |
 | <a name="module_tfe_organization"></a> [tfe\_organization](#module\_tfe\_organization) | dhoppeIT/organization/tfe | ~> 0.3.0 |
 | <a name="module_tfe_registry"></a> [tfe\_registry](#module\_tfe\_registry) | dhoppeIT/registry/tfe | ~> 0.1.0 |
 | <a name="module_tfe_team"></a> [tfe\_team](#module\_tfe\_team) | dhoppeIT/team/tfe | ~> 0.1.1 |
 | <a name="module_tfe_variable_aws"></a> [tfe\_variable\_aws](#module\_tfe\_variable\_aws) | dhoppeIT/variable/tfe | ~> 0.2.0 |
+| <a name="module_tfe_variable_hcloud_dev"></a> [tfe\_variable\_hcloud\_dev](#module\_tfe\_variable\_hcloud\_dev) | dhoppeIT/variable/tfe | ~> 0.2.0 |
+| <a name="module_tfe_variable_hcloud_prod"></a> [tfe\_variable\_hcloud\_prod](#module\_tfe\_variable\_hcloud\_prod) | dhoppeIT/variable/tfe | ~> 0.2.0 |
+| <a name="module_tfe_variable_hcloud_stage"></a> [tfe\_variable\_hcloud\_stage](#module\_tfe\_variable\_hcloud\_stage) | dhoppeIT/variable/tfe | ~> 0.2.0 |
 | <a name="module_tfe_variable_terraform"></a> [tfe\_variable\_terraform](#module\_tfe\_variable\_terraform) | dhoppeIT/variable/tfe | ~> 0.2.0 |
 | <a name="module_tfe_workspace_aws"></a> [tfe\_workspace\_aws](#module\_tfe\_workspace\_aws) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
+| <a name="module_tfe_workspace_hcloud"></a> [tfe\_workspace\_hcloud](#module\_tfe\_workspace\_hcloud) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
 | <a name="module_tfe_workspace_terraform"></a> [tfe\_workspace\_terraform](#module\_tfe\_workspace\_terraform) | dhoppeIT/workspace/tfe | ~> 0.2.0 |
 
 ## Resources
@@ -105,6 +110,9 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_github_token"></a> [github\_token](#input\_github\_token) | The token used to authenticate with GitHub | `string` | `null` | no |
+| <a name="input_hcloud_token_dev"></a> [hcloud\_token\_dev](#input\_hcloud\_token\_dev) | The token used to authenticate with Hetzner Cloud (dev) | `string` | `null` | no |
+| <a name="input_hcloud_token_prod"></a> [hcloud\_token\_prod](#input\_hcloud\_token\_prod) | The token used to authenticate with Hetzner Cloud (prod) | `string` | `null` | no |
+| <a name="input_hcloud_token_stage"></a> [hcloud\_token\_stage](#input\_hcloud\_token\_stage) | The token used to authenticate with Hetzner Cloud (stage) | `string` | `null` | no |
 | <a name="input_slack_webhook_url"></a> [slack\_webhook\_url](#input\_slack\_webhook\_url) | The destination URL used to send Slack notifications | `string` | `null` | no |
 
 ## Outputs

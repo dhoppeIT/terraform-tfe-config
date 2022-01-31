@@ -6,6 +6,24 @@ locals {
       description = "The token used to authenticate with GitHub"
       sensitive   = true
     },
+    "hcloud_token_dev" = {
+      value       = var.hcloud_token_dev
+      category    = "terraform"
+      description = "The token used to authenticate with Hetzner Cloud (dev)"
+      sensitive   = true
+    },
+    "hcloud_token_stage" = {
+      value       = var.hcloud_token_stage
+      category    = "terraform"
+      description = "The token used to authenticate with Hetzner Cloud (stage)"
+      sensitive   = true
+    },
+    "hcloud_token_prod" = {
+      value       = var.hcloud_token_prod
+      category    = "terraform"
+      description = "The token used to authenticate with Hetzner Cloud (prod)"
+      sensitive   = true
+    },
     "slack_webhook_url" = {
       value       = var.slack_webhook_url
       category    = "terraform"
