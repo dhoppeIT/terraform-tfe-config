@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.1.3](https://github.com/dhoppeIT/terraform-tfe-config/compare/v0.1.2...v0.1.3) (2022-01-31)
+
+
+### Bug Fixes
+
+* Change name of GitHub repository ([#28](https://github.com/dhoppeIT/terraform-tfe-config/issues/28)) ([1d02775](https://github.com/dhoppeIT/terraform-tfe-config/commit/1d027752007cb74784449143c474c43f30e1b96c))
+* Change name of Terraform Cloud workspace ([#32](https://github.com/dhoppeIT/terraform-tfe-config/issues/32)) ([d5e68fb](https://github.com/dhoppeIT/terraform-tfe-config/commit/d5e68fb06a5462eb9cae15b8df1897836ae20c7c))
+
 ### [0.1.2](https://github.com/dhoppeIT/terraform-tfe-config/compare/v0.1.1...v0.1.2) (2022-01-29)
 
 
