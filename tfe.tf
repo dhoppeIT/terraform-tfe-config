@@ -5,49 +5,61 @@ locals {
       category    = "env"
       description = "The AWS access key to authenticate with Amazon Web Services"
       sensitive   = false
-    },
+    }
     "AWS_SECRET_ACCESS_KEY" = {
       value       = var.aws_secret_access_key
       category    = "env"
       description = "The AWS secret key to authenticate with Amazon Web Services"
       sensitive   = true
-    },
+    }
     "TFE_TOKEN" = {
       value       = module.tfe_team.token
       category    = "env"
       description = "The token used to authenticate with Terraform Cloud/Enterprise"
       sensitive   = true
-    },
+    }
+    "aws_access_key_id" = {
+      value       = var.aws_access_key_id
+      category    = "terraform"
+      description = "The AWS access key to authenticate with Amazon Web Services"
+      sensitive   = false
+    }
+    "aws_secret_access_key" = {
+      value       = var.aws_secret_access_key
+      category    = "terraform"
+      description = "The AWS secret key to authenticate with Amazon Web Services"
+      sensitive   = true
+    }
     "github_token" = {
       value       = var.github_token
       category    = "terraform"
       description = "The token used to authenticate with GitHub"
       sensitive   = true
-    },
+    }
     "hcloud_token_dev" = {
       value       = var.hcloud_token_dev
       category    = "terraform"
       description = "The token used to authenticate with Hetzner Cloud (dev)"
       sensitive   = true
-    },
+    }
     "hcloud_token_stage" = {
       value       = var.hcloud_token_stage
       category    = "terraform"
       description = "The token used to authenticate with Hetzner Cloud (stage)"
       sensitive   = true
-    },
+    }
     "hcloud_token_prod" = {
       value       = var.hcloud_token_prod
       category    = "terraform"
       description = "The token used to authenticate with Hetzner Cloud (prod)"
       sensitive   = true
-    },
+    }
     "slack_webhook_url" = {
       value       = var.slack_webhook_url
       category    = "terraform"
       description = "The destination URL used to send Slack notifications"
       sensitive   = true
-    },
+    }
   }
 }
 
