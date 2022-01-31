@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.1.4](https://github.com/dhoppeIT/terraform-tfe-config/compare/v0.1.3...v0.1.4) (2022-01-31)
+
+
+### Bug Fixes
+
+* Add missing provider (aws) ([#36](https://github.com/dhoppeIT/terraform-tfe-config/issues/36)) ([89d7eb8](https://github.com/dhoppeIT/terraform-tfe-config/commit/89d7eb8c3e8588c4cd3d44e1f6355c564b4b0151))
+* Add missing variables (aws_access_key_id, aws_secret_access_key) ([#34](https://github.com/dhoppeIT/terraform-tfe-config/issues/34)) ([67fbad0](https://github.com/dhoppeIT/terraform-tfe-config/commit/67fbad07174e688dd5091eaf321221d9a8adbb88))
+
 ### [0.1.3](https://github.com/dhoppeIT/terraform-tfe-config/compare/v0.1.2...v0.1.3) (2022-01-31)
 
 
