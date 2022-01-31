@@ -1,5 +1,23 @@
 locals {
   variables_terraform = {
+    "AWS_ACCESS_KEY_ID" = {
+      value       = var.aws_access_key_id
+      category    = "env"
+      description = "The AWS access key to authenticate with Amazon Web Services"
+      sensitive   = false
+    },
+    "AWS_SECRET_ACCESS_KEY" = {
+      value       = var.aws_secret_access_key
+      category    = "env"
+      description = "The AWS secret key to authenticate with Amazon Web Services"
+      sensitive   = true
+    },
+    "TFE_TOKEN" = {
+      value       = module.tfe_team.token
+      category    = "env"
+      description = "The token used to authenticate with Terraform Cloud/Enterprise"
+      sensitive   = true
+    },
     "github_token" = {
       value       = var.github_token
       category    = "terraform"
@@ -30,12 +48,6 @@ locals {
       description = "The destination URL used to send Slack notifications"
       sensitive   = true
     },
-    "TFE_TOKEN" = {
-      value       = module.tfe_team.token
-      category    = "env"
-      description = "The token used to authenticate with Terraform Cloud/Enterprise"
-      sensitive   = true
-    }
   }
 }
 
