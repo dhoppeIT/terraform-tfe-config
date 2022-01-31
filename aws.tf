@@ -78,7 +78,7 @@ module "tfe_workspace_aws" {
 
   for_each = local.workspaces_aws
 
-  name               = "aws"
+  name               = each.key
   organization       = module.tfe_organization.name
   description        = "Provision of Amazon Web Services resources"
   allow_destroy_plan = each.value["allow_destroy_plan"]
