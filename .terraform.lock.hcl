@@ -2,21 +2,22 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "4.3.0"
+  version     = "4.5.0"
   constraints = "~> 4.2"
   hashes = [
-    "h1:AcT2MN3JsZ3LZCFIbogrrlhGKizAZ+uX1NRlk8eaDzo=",
-    "zh:087c67e5429f343a164221c05a83f152322f411e7394f8a39ed81a75982af1f2",
-    "zh:2e852a1b107e5324524874e1cd98bcf3a69284b4fe04750aa373054177c54214",
-    "zh:4b9a54b5895f945827832e6ddd16ff107301fedf47acbd83d17d4e18bbf10bb1",
-    "zh:64dfc02bc85f5df2f51ff942fc78d72fcd0db17b0f53e1fae380e58adbd239b3",
-    "zh:766f9aef619cfd23e924aee523791acccd30b6d8f1cc0ed1a7b5c953bf8c5392",
-    "zh:90048d87ff3071a4356cf91916b46a7ec69ba55bcba5765b598d3fe545d4c6ca",
-    "zh:c51f5b238af37c63e9033a12fd7fedc87c03eb966f5f5c7786eb6246e8bf3071",
-    "zh:d0df94d3112a25de609dfb55c5e3b0d119dea519a2bdd8099e64a8d63f22b683",
-    "zh:de166ecfeed70f570cea72ec094f00c2f997496b3226fa08518e7cd4a73884e1",
-    "zh:e31c31d00f42ea2dbaab1ad4c245da5cfff63e28399b5a5795b5e6a826c6c8af",
-    "zh:f93725afd8410194ede51d83505327aa1ae6a9b4280cf31db649c62c7dc203ae",
+    "h1:4zvgHQ1goH6KvniHe+loxRD+8NSsCOznYcGLaxK2W2E=",
+    "zh:0573de96ba316d808be9f8d6fc8e8e68e0e6b614ed4d707bd236c4f7b46ac8b1",
+    "zh:37560469042f5f43fdb961eb6e6b0a8f95057df68af2c1168d5b8c66ddcb1512",
+    "zh:44bb4f6bc1f58e19b8bf7041f981a2549a351762d17dd39654eb24d1fa7991c7",
+    "zh:53af6557b68e547ac5c02cfd0e47ef63c8e9edfacf46921ccc97d73c0cd362c9",
+    "zh:578a583f69a8e5947d66b2b9d6969690043b6887f6b574263be7ef05f82a82ad",
+    "zh:6c2d42f30db198a4e7badd7f8037ef9bd951cfd6cf40328c6a7eed96801a374e",
+    "zh:758f3fc4d833dbdda57a4db743cbbddc8fd8c0492df47771b848447ba7876ce5",
+    "zh:78241bd45e2f6102055787b3697849fee7e9c28a744ba59cad956639c1aca07b",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:a3a7f4699c097c7b8364d05a5df9f3bd5d005fd5736c28ec5dc8f8c0ee340512",
+    "zh:bf875483bf2ad6cfb4029813328cdcd9ea40f50b9f1c265f4e742fe8cc456157",
+    "zh:f4722596e8b5f012013f87bf4d2b7d302c248a04a144de4563b3e3f754a30c51",
   ]
 }
 
