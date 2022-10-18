@@ -36,14 +36,14 @@ locals {
     }
     "hcloud-stage" = {
       allow_destroy_plan = false
-      terraform_version  = "~> 1.1.3"
+      terraform_version  = "~> 1.3.2"
       tag_names          = ["hcloud", "stage"]
       identifier         = "dhoppeIT/terraform-hcloud-config"
       branch             = "develop"
     }
     "hcloud-prod" = {
       allow_destroy_plan = false
-      terraform_version  = "1.1.3"
+      terraform_version  = "1.3.2"
       tag_names          = ["hcloud", "prod"]
       identifier         = "dhoppeIT/terraform-hcloud-config"
       branch             = "main"
