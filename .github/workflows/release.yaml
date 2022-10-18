@@ -8,12 +8,9 @@ on:
 
 jobs:
   release:
-    name: Create Release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create Release
-        uses: GoogleCloudPlatform/release-please-action@v3
-        with:
-          release-type: terraform-module
-          bump-minor-pre-major: true
-          pull-request-title-pattern: "chore${scope}: Release${component} ${version}"
+    if: ${{ github.repository_owner == 'dhoppeIT' }}
+    uses: dhoppeIT/github-reusable-workflows/.github/workflows/release.yaml@main
+    with:
+      release-type: terraform-module
+      bump-minor-pre-major: true
+      pull-request-title-pattern: "chore${scope}: Release${component} ${version}"
