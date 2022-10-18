@@ -57,14 +57,14 @@ locals {
     }
     "aws-stage" = {
       allow_destroy_plan = false
-      terraform_version  = "~> 1.1.3"
+      terraform_version  = "~> 1.3.2"
       tag_names          = ["aws", "stage"]
       identifier         = "dhoppeIT/terraform-aws-config"
       branch             = "develop"
     }
     "aws-prod" = {
       allow_destroy_plan = false
-      terraform_version  = "1.1.3"
+      terraform_version  = "1.3.2"
       tag_names          = ["aws", "prod"]
       identifier         = "dhoppeIT/terraform-aws-config"
       branch             = "main"
