@@ -16,4 +16,5 @@ jobs:
       linter_rules_path: .
       validate_all_codebase: false
     secrets:
+      cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
       github-token: ${{ secrets.GITHUB_TOKEN }}
