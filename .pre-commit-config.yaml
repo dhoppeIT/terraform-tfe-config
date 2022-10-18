@@ -5,7 +5,7 @@ repos:
     hooks:
       - id: check-merge-conflict
       - id: end-of-file-fixer
-        exclude: '^rover.svg$'
+        exclude: 'rover.svg$'
       - id: trailing-whitespace
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
@@ -33,3 +33,7 @@ repos:
           - --args=--only=terraform_unused_declarations
           - --args=--only=terraform_unused_required_providers
           - --args=--only=terraform_workspace_remote
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.2.7
+    hooks:
+      - id: gitleaks
