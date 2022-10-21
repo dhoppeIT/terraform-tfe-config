@@ -4,6 +4,9 @@ name: Readme
 on:
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   readme:
     uses: dhoppeIT/github-reusable-workflows/.github/workflows/docs.yaml@main
